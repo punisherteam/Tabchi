@@ -1,36 +1,77 @@
 # Tabchi V4
 
-TG-CLI based broadcasting bot!
+اموزش ران کردن ربات تب جی
+اول کد های زیر رو جدا جدا بفرستید
 
-## Install
-```bash
+
+```
+sudo apt-get update
+sudo apt-get upgrade
+```
+بعدش
+```
+sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-dev lua-socket lua-sec lua-expat libevent-dev make unzip git redis-server autoconf g++ libjansson-dev libpython-dev expat libexpat1-dev ppa-purge python3-pip python3-dev
+```
+و حالا باید ببینید ورژن سرورتون چنده
+
+```
+lsb_release -a
+```
+گه متن زیر اومد قسمت (اول) رو انجام ندید
+Distributor ID: Ubuntu                                                                        
+Description:    Ubuntu 16.04.1 LTS                                                            
+Release:        16.04                                                                         
+Codename:       xenial
+
+## قسمت اول
+کد های زیر رو دونه دونه بفرستید و هرجا لازم بودy بفرستید یا اینتر
+
+```
+sudo apt-get install update-manager-core
+sudo do-release-upgrade
+```
+بعد برای اینکه ببینید اپدیت شد یا نه دستور زیر رو بفرستید
+```
+lsb_release -a 
+```
+## قسمت دوم
+حال باید سورس رو کلون کنید
+
+```
+git clone https://github.com/punisherteam/Tabchi
+cd Tabchi
 chmod 777 install.sh
 ./install.sh
 ```
-## Create a bot!
-```
-root@iTeam:~# lua creator.lua
-Auto Detected Tabchi ID : 0
-Enter Full Sudo ID : 122774063
-Done!
-New Tabchi Created...
-ID : 0
-Full Sudo : 122774063
-Run : ./tabchi-0.sh
-```
-Enter your telegram Id in "Full Sudo ID" part
+بعدش
 
-Enjoy Your New Bot!
+```
+lua creator.lua
+```
+
+بعد ازتون ایدی عددی ربات 
+بعد ایدی عددی خودتون
+بعدش یه متنی میاد مثل زیر
+
+./tabchi-//////////.sh
+
+اینو کپی پیست کنید و بعد ازتون شماره و بعد کدو میخواد 
+
+
 ## Run
 Use `./tabchi-ID.sh` to run your bot normaly or use `screen ./tabchi-ID.sh` for auto launch mode (put tabchi-id in ID part)
 
+## Run all bots
+Use `tmux new-session -s tabchi-anticrash "bash anticrash.sh"` to run all bots
+
 ## Help and more...
 Send `/start` to [@TabChiRobot](https://telegram.me/TabChiRobot) in telegram
-## Developers
 
- * [BugFather (Amir_h)](https://telegram.me/BugFather)
- * [Base64 (Amin)](https://telegram.me/Base64)
- * [Jan123 (Javad)](https://telegram.me/XxX_Developer_XxX)
- * [Shayan123Hacker (Shayan)](https://telegram.me/Shayan123Hacker)
 
-### Powered by [iTeam](https://telegram.me/iTeam_IR)
+برای فهمیدن ایدی عددی خود به
+` @userinfobot` 
+پیام بدهید
+ 
+ ## Developers
+ * [mamadkiller](https://telegram.me/Bmamadkiller)
+ 
